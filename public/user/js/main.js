@@ -1015,10 +1015,20 @@ function sectionSlider() {
     let centered = false;
     let pagination = false;
     let scrollbar = false;
+    let autoplay = false;
 
     if (el.getAttribute('data-gap'))    gap = el.getAttribute('data-gap');
     if (el.hasAttribute('data-loop'))   loop = true;
     if (el.hasAttribute('data-center')) centered = true;
+
+    if (el.hasAttribute('data-autoplay')) {
+      const delay = parseInt(el.getAttribute('data-autoplay'), 10);
+      autoplay = {
+        delay: Number.isFinite(delay) && delay > 0 ? delay : 3500,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+      };
+    }
 
     if (el.getAttribute('data-pagination')) {
       let paginationElement = document.querySelector(`.${el.getAttribute('data-pagination')}`)
@@ -1069,6 +1079,7 @@ function sectionSlider() {
       loopAdditionalSlides: 1,
       preloadImages: false,
       lazy: true,
+      autoplay: autoplay,
       
       scrollbar: scrollbar,
       pagination: pagination,

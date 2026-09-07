@@ -11,6 +11,24 @@
   background-color: var(--color-light-3, #FBFBFB);
 }
 
+/* Why choose cards in slider */
+.why-choose-card {
+  height: 100%;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+}
+
+.why-choose-card .featureIcon__icon {
+  margin-bottom: 0;
+}
+
+.js-section-slider .swiper-slide:has(.why-choose-card) {
+  height: auto;
+}
+
+.js-section-slider .swiper-wrapper:has(.why-choose-card) {
+  align-items: stretch;
+}
+
 /* Product card: tag badge on image + single-line title */
 .tourCard.-type-1 .tourCard__image {
   overflow: hidden;
