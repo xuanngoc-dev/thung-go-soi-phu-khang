@@ -452,6 +452,8 @@
 
 .tourCard.-type-1 .tourCard__title {
   overflow: hidden;
+  color: var(--color-dark-1, #05073C);
+  transition: color 0.25s ease;
 }
 
 .tourCard.-type-1 .tourCard__title span {
@@ -459,6 +461,18 @@
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  background-image: linear-gradient(
+    to right,
+    var(--color-accent-1, #EB662B) 0%,
+    var(--color-accent-1, #EB662B) 100%
+  );
+  transition:
+    color 0.25s ease,
+    background-size 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.tourCard.-type-1:hover .tourCard__title {
+  color: var(--color-accent-1, #EB662B);
 }
 
 .tourCard.-type-1 .tourCard__price {
