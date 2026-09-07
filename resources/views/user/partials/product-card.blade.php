@@ -46,10 +46,10 @@
     </div>
     <div class="d-flex justify-end items-center border-1-top text-13 text-dark-1">
       <div class="tourCard__priceWrap d-flex items-baseline">
-        <span class="tourCard__price text-16 fw-500">{{ number_format($price, 0, ',', '.') }}đ</span>
         @if ($old)
         <span class="tourCard__price-old ml-5">{{ number_format($old, 0, ',', '.') }}đ</span>
         @endif
+        <span class="tourCard__price text-16 fw-500">{{ number_format($price, 0, ',', '.') }}đ</span>
       </div>
     </div>
   </div>

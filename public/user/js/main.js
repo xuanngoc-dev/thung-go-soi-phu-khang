@@ -610,11 +610,12 @@ function toTopButton() {
   const button = document.querySelector('.js-top-button')
   if (!button) return
 
-  const pageContentHeight = document.querySelector('main').offsetHeight
+  const toggleVisibility = () => {
+    button.classList.toggle('is-hidden', window.scrollY < 400)
+  }
 
-  new ScrollMagic.Scene({ duration: pageContentHeight - 1600, })
-    .setClassToggle(button, 'is-hidden')
-    .addTo(App.SMcontroller)
+  toggleVisibility()
+  window.addEventListener('scroll', toggleVisibility, { passive: true })
 
   button.addEventListener('click', () => {
     window.scrollTo({
