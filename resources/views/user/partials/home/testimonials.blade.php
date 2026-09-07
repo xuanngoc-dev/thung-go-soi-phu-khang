@@ -11,7 +11,13 @@
     </div>
 
     <div class="relative pt-40 sm:pt-20">
-      <div class="overflow-hidden pb-30 js-section-slider" data-gap="16" data-slider-cols="xl-2 lg-2 md-1 sm-1 base-1" data-nav-prev="js-testimonials-prev" data-nav-next="js-testimonials-next">
+      <div
+        class="overflow-hidden pb-30 js-section-slider"
+        data-gap="16"
+        data-slider-cols="xl-2 lg-2 md-1 sm-1 base-1"
+        data-loop
+        data-autoplay="4000"
+      >
         <div class="swiper-wrapper">
           @php
             $reviews = [
@@ -21,11 +27,17 @@
               ['img' => '4.webp', 'title' => 'Tư vấn tận tâm', 'text' => 'Được tư vấn kỹ từ khâu chọn thùng đến cách xử lý ban đầu, dùng yên tâm đúng như cam kết của Phú Khang.', 'name' => 'Anh Thể', 'role' => 'Khách hàng Hà Nội'],
               ['img' => '5.webp', 'title' => 'Giao hàng nhanh', 'text' => 'Đặt hàng xong được giao đúng hẹn, đóng gói cẩn thận, thùng nguyên vẹn và đẹp hơn cả hình ảnh trên web.', 'name' => 'Anh Long', 'role' => 'Chủ nhà hàng'],
               ['img' => '6.webp', 'title' => 'Đáng tiền đầu tư', 'text' => 'Dùng được một thời gian thấy gỗ không bị thấm, vòi inox chắc chắn, rất hài lòng với mức giá đã trả.', 'name' => 'Chị Lan', 'role' => 'Khách hàng TP.HCM'],
+              ['img' => '1.webp', 'title' => 'Gỗ thơm, rượu ngon', 'text' => 'Thùng gỗ sồi thơm nhẹ, rượu ngâm vài tháng lên màu đẹp và mềm hơn hẳn so với bình inox trước đây.', 'name' => 'Anh Minh', 'role' => 'Khách hàng Đà Nẵng'],
+              ['img' => '2.webp', 'title' => 'Hỗ trợ sau bán tốt', 'text' => 'Có thắc mắc về cách vệ sinh thùng mới, bên shop hướng dẫn rất chi tiết qua Zalo, mình yên tâm dùng lâu dài.', 'name' => 'Chị Trang', 'role' => 'Chủ quán cafe'],
+              ['img' => '3.webp', 'title' => 'Phù hợp làm quà', 'text' => 'Mua thùng 20L tặng bố chồng dịp Tết, đóng gói đẹp, kèm hướng dẫn sử dụng rõ ràng, cả nhà đều thích.', 'name' => 'Chị Hương', 'role' => 'Khách hàng gia đình'],
+              ['img' => '4.webp', 'title' => 'Đai chắc, không rò', 'text' => 'Lo sợ thùng bị rò rượu nhưng dùng hơn nửa năm vẫn kín tuyệt đối, đai siết đều và rất chắc tay.', 'name' => 'Anh Đức', 'role' => 'Chủ quán nhậu'],
+              ['img' => '5.webp', 'title' => 'Chọn đúng dung tích', 'text' => 'Nhân viên tư vấn chọn thùng 30L theo lượng rượu mình hay ngâm, không dư không thiếu, rất thực tế.', 'name' => 'Anh Khoa', 'role' => 'Khách hàng Bình Dương'],
+              ['img' => '6.webp', 'title' => 'Nhìn sang, dùng bền', 'text' => 'Đặt góc bếp nhìn rất sang, khách đến nhà ai cũng hỏi mua ở đâu. Dùng ổn định, không phải thay thế.', 'name' => 'Chị Nga', 'role' => 'Chủ homestay'],
             ];
           @endphp
           @foreach ($reviews as $r)
           <div class="swiper-slide">
-            <div class="d-flex items-start py-30 px-30 border-1 rounded-12 bg-white -hover-shadow">
+            <div class="d-flex items-center py-30 px-30 border-1 rounded-12 bg-white -hover-shadow">
               <div class="testimonials -type-1">
                 <div class="testimonials__image size-80 rounded-full" style="margin: 0;">
                   <img src="{{ asset('user/img/testimonials/phukhang/'.$r['img']) }}" alt="{{ $r['name'] }}" class="object-cover rounded-full">
@@ -39,22 +51,13 @@
               <div class="ml-20">
                 <div class="lh-16 text-16 fw-500">{{ $r['name'] }}</div>
                 <div class="lh-16 text-14 text-light-2">{{ $r['role'] }}</div>
-                <div class="text-16 fw-500 text-accent-1 mt-15">{{ $r['title'] }}</div>
-                <div class="text-15 mt-10">{{ $r['text'] }}</div>
+                <div class="text-16 fw-500 text-accent-1">{{ $r['title'] }}</div>
+                <div class="text-15">{{ $r['text'] }}</div>
               </div>
             </div>
           </div>
           @endforeach
         </div>
-      </div>
-
-      <div class="navAbsolute -type-1 justify-between">
-        <button class="navAbsolute__button bg-white js-testimonials-prev" type="button">
-          <i class="icon-arrow-left text-14"></i>
-        </button>
-        <button class="navAbsolute__button bg-white js-testimonials-next" type="button">
-          <i class="icon-arrow-right text-14"></i>
-        </button>
       </div>
     </div>
   </div>

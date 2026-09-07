@@ -491,6 +491,40 @@
   margin-top: var(--ui-space-half) !important;
 }
 
+/* Home CTA promo — shorter height, stronger text presence */
+.cta-promo.cta.-type-2 {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+@media (max-width: 991px) {
+  .cta-promo.cta.-type-2 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media (max-width: 767px) {
+  .cta-promo.cta.-type-2 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+.cta-promo__title {
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.55));
+}
+
+.cta-promo__text {
+  filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.5));
+}
+
+.cta-promo__btn:hover {
+  background-color: #fff !important;
+  border-color: #fff;
+  color: var(--color-accent-1, #EB662B) !important;
+}
+
 /* Global mobile typography scale-down */
 @media (max-width: 767px) {
   :root {
