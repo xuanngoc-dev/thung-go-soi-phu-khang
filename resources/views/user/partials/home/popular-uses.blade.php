@@ -24,12 +24,12 @@
         ];
       @endphp
       @foreach ($uses as $i => $u)
-      <a href="#" data-anim-child="slide-up delay-{{ $i + 1 }}" class="featureCard -type-1 -hover-1 overflow-hidden rounded-12 px-30 py-30">
+      <a href="#" data-anim-child="slide-up delay-{{ $i + 1 }}" class="featureCard -type-1 -hover-1 popular-use-card overflow-hidden rounded-12 px-30 py-30">
         <div class="featureCard__image">
           <img src="{{ asset('user/img/products/'.$u['img']) }}" alt="{{ $u['title'] }}">
         </div>
-        <div class="featureCard__content">
-          <h4 class="text-white">{{ $u['title'] }}</h4>
+        <div class="featureCard__content popular-use-card__content">
+          <h4 class="popular-use-card__title text-white">{{ $u['title'] }}</h4>
         </div>
       </a>
       @endforeach

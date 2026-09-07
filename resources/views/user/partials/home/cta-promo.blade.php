@@ -16,7 +16,7 @@
             Ưu đãi có hạn — liên hệ tư vấn chọn dung tích phù hợp ngay hôm nay.
           </p>
           <div class="mt-30 md:mt-20">
-            <a href="tel:0971995365" class="button -md cta-promo__btn bg-accent-1 text-white">
+            <a href="tel:0866333766" class="button -md cta-promo__btn bg-accent-1 text-white">
               Liên hệ ngay
               <i class="icon-arrow-top-right ml-8 text-14"></i>
             </a>

@@ -126,7 +126,7 @@
           <a href="#" class="lg:d-none ml-20 fw-500">Tin tức</a>
           <a href="#" class="lg:d-none ml-20 fw-500">Liên hệ</a>
 
-          <a href="tel:0971995365" class="button -sm -dark-1 bg-accent-1 rounded-200 text-white ml-30">
+          <a href="tel:0866333766" class="button -sm -dark-1 bg-accent-1 rounded-200 text-white ml-30">
             Gọi ngay
           </a>
 

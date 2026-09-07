@@ -78,7 +78,7 @@
 
           <div class="text-20 lh-12 fw-500 mt-20">
             <div>Tư vấn miễn phí</div>
-            <div class="text-accent-1">0971 995 365</div>
+            <div class="text-accent-1">0866333766</div>
           </div>
 
           <div class="d-flex items-center x-gap-10 pt-30">
