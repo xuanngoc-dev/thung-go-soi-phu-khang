@@ -16,7 +16,7 @@
                   <div class="col-auto">
                     <div class="text-20 fw-500">
                       Hotline tư vấn
-                      <a href="tel:0971995365" class="text-accent-1">0971 995 365</a>
+                      <a href="tel:0866333766" class="text-accent-1">0866 333 766</a>
                     </div>
                   </div>
                 </div>
@@ -46,7 +46,7 @@
 
                 <div class="y-gap-10 mt-20">
                   <a class="d-block" href="#">Địa chỉ: Việt Nam — giao hàng toàn quốc</a>
-                  <a class="d-block" href="tel:0971995365">Hotline: 0971 995 365</a>
+                  <a class="d-block" href="tel:0866333766">Hotline: 0866 333 766</a>
                   <a class="d-block" href="mailto:lienhe@phukhang.vn">Email: lienhe@phukhang.vn</a>
                 </div>
               </div>
@@ -82,13 +82,6 @@
                 <div class="footer__newsletter">
                   <input type="tel" placeholder="Số điện thoại của bạn">
                   <button>Gửi</button>
-                </div>
-
-                <h4 class="text-20 fw-500 mt-30">Dung tích phổ biến</h4>
-
-                <div class="mt-10">
-                  <a class="d-flex items-center" href="#">Thùng gỗ sồi 10L – 30L</a>
-                  <a class="d-flex items-center mt-10" href="#">Thùng gỗ sồi 50L – 200L</a>
                 </div>
               </div>
             </div>
