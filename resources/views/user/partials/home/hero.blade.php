@@ -1,16 +1,16 @@
 @php
   $heroSlides = [
-    ['src' => 'user/img/hero/phukhang/slide.webp', 'alt' => 'Thùng gỗ sồi Phú Khang'],
-    ['src' => 'user/img/hero/phukhang/banner.webp', 'alt' => 'Banner thùng gỗ sồi'],
-    ['src' => 'user/img/hero/phukhang/ngam-ruou.jpg', 'alt' => 'Ngâm rượu gỗ sồi'],
-    ['src' => 'user/img/hero/phukhang/trung-bay.jpg', 'alt' => 'Trưng bày sản phẩm Phú Khang'],
+    ['src' => 'user/img/hero/phukhang/ngam-ruou.jpg', 'alt' => 'Thùng gỗ sồi ngâm rượu ngoài trời'],
+    ['src' => 'user/img/hero/phukhang/trung-bay.jpg', 'alt' => 'Thùng gỗ sồi trưng bày'],
+    ['src' => 'user/img/products/thung-ngam-ruou.webp', 'alt' => 'Thùng gỗ sồi trang trí nội thất'],
+    ['src' => 'user/img/products/thung-10l.webp', 'alt' => 'Thùng gỗ sồi 10L ánh sáng tự nhiên'],
   ];
 
   $heroTitles = [
-    'Tinh hoa gỗ sồi – Khởi nguồn hương vị rượu ngon',
-    'Thùng gỗ sồi nhập khẩu – Chắc chắn, bền đẹp',
-    'Ngâm rượu chuẩn vị – Từ 10L đến 300L',
-    'Phú Khang – Đồng hành cùng hương vị truyền thống',
+    'Tinh hoa gỗ sồi – Khơi nguồn hương vị rượu ngon cho mọi gia đình',
+    'Thùng gỗ sồi nhập khẩu chắc chắn – Bền đẹp theo năm tháng',
+    'Ngâm rượu chuẩn vị từ 10L đến 300L – Chọn đúng nhu cầu sử dụng',
+    'Phú Khang đồng hành cùng hương vị truyền thống của Việt Nam',
   ];
 
   $heroCategories = [
@@ -44,9 +44,9 @@
     <div class="row justify-center">
       <div class="col-xl-8 col-lg-10">
         <div data-anim-child="slide-up" class="hero__content">
-          <h1 class="hero__title">
+          <h3 class="hero__title">
             <span data-hero-typing aria-live="polite">{{ $heroTitles[0] }}</span><span class="hero__cursor" aria-hidden="true"></span>
-          </h1>
+          </h3>
 
           <p class="hero__text">
             Thùng Gỗ Sồi Phú Khang cung cấp thùng ngâm rượu nhập khẩu, gia công chắc chắn, đa dạng dung tích từ 10L đến 300L, giao hàng toàn quốc.
@@ -143,13 +143,29 @@
     height: 100%;
   }
 
+  .hero.-type-1 .hero__slides::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(
+      180deg,
+      rgba(32, 28, 24, 0.28) 0%,
+      rgba(32, 28, 24, 0.38) 45%,
+      rgba(32, 28, 24, 0.48) 100%
+    );
+    pointer-events: none;
+  }
+
   .hero.-type-1 .hero__slide {
     position: absolute;
     inset: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
     opacity: 0;
+    filter: brightness(1.12) saturate(0.82) contrast(0.95);
     transition: opacity 1s ease;
   }
 
@@ -163,7 +179,7 @@
     left: 0;
     width: 100%;
     object-fit: cover;
-    z-index: 1;
+    z-index: 2;
     pointer-events: none;
   }
 
@@ -174,13 +190,31 @@
   }
 
   .hero.-type-1 .hero__title {
-    min-height: 2.4em;
+    height: calc(2 * 1.25em);
+    min-height: calc(2 * 1.25em);
+    max-height: calc(2 * 1.25em);
+    margin: 0;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.25;
+    text-align: left;
+    overflow: hidden;
+  }
+
+  @media (max-width: 991px) {
+    .hero.-type-1 .hero__title {
+      font-size: 32px;
+    }
   }
 
   @media (max-width: 767px) {
     .hero.-type-1 .hero__title {
-      min-height: 3.6em;
+      font-size: 24px;
     }
+  }
+
+  .hero.-type-1 .hero__text {
+    text-align: left;
   }
 
   .hero.-type-1 .hero__cursor {
@@ -199,7 +233,7 @@
 
   .hero__search-wrap {
     max-width: 760px;
-    margin-left: auto;
+    margin-left: 0;
     margin-right: auto;
   }
 
@@ -208,10 +242,10 @@
     align-items: stretch;
     gap: 0;
     width: 100%;
-    min-height: 58px;
-    padding: 6px;
+    min-height: 48px;
+    padding: 4px;
     background: #fff;
-    border-radius: 14px;
+    border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
   }
 
@@ -298,9 +332,9 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-width: 110px;
+    min-width: 96px;
     height: auto !important;
-    padding: 0 22px !important;
+    padding: 0 18px !important;
     border-radius: 10px !important;
     white-space: nowrap;
   }
@@ -372,9 +406,9 @@
   @media (max-width: 767px) {
     .hero__search {
       flex-wrap: nowrap;
-      min-height: 52px;
-      padding: 5px;
-      border-radius: 12px;
+      min-height: 44px;
+      padding: 3px;
+      border-radius: 10px;
     }
 
     .hero__search-label {
@@ -388,8 +422,8 @@
     }
 
     .hero__search-submit {
-      min-width: 72px;
-      padding: 0 14px !important;
+      min-width: 64px;
+      padding: 0 12px !important;
     }
 
     .hero__search-submit .mr-10 {

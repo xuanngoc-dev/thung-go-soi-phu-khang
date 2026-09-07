@@ -66,7 +66,7 @@
         ];
       @endphp
       @foreach ($posts as $post)
-      <div class="col-6 col-md-4 col-lg-4">
+      <div class="col-12 col-md-4 col-lg-4">
         <a href="#" class="blogCard -type-home">
           <div class="blogCard__image">
             <img src="{{ asset('user/img/blog/'.$post['img']) }}" alt="{{ $post['title'] }}">

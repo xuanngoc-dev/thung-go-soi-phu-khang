@@ -519,6 +519,11 @@
   filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.5));
 }
 
+.cta-promo__btn {
+  padding: 12px 28px;
+  font-size: 14px;
+}
+
 .cta-promo__btn:hover {
   background-color: #fff !important;
   border-color: #fff;

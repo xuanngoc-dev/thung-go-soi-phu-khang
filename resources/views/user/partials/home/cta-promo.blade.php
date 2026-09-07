@@ -18,7 +18,7 @@
           <div class="mt-30 md:mt-20">
             <a href="tel:0971995365" class="button -md cta-promo__btn bg-accent-1 text-white">
               Liên hệ ngay
-              <i class="icon-arrow-top-right ml-10 text-16"></i>
+              <i class="icon-arrow-top-right ml-8 text-14"></i>
             </a>
           </div>
         </div>
