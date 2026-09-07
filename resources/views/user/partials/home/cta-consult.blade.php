@@ -1,4 +1,4 @@
-<section data-anim="slide-up delay-1" class="cta -type-1">
+<section data-anim="slide-up delay-1" class="cta -type-1 cta-consult">
   <div class="cta__bg">
     <img src="{{ asset('user/img/hero/phukhang/ngam-ruou.jpg') }}" alt="Đăng ký nhận tư vấn">
   </div>
@@ -7,32 +7,32 @@
     <div class="row justify-between">
       <div class="col-xl-5 col-lg-6">
         <div class="cta__content">
-          <h2 class="text-40 md:text-24 lh-13 text-white">
+          <h2 class="cta-consult__title text-50 md:text-30 lh-13 fw-700 text-white">
             Nhận tư vấn chọn<br class="lg:d-none">
             dung tích thùng phù hợp
           </h2>
-          <p class="mt-10 text-white">
-            Để lại số điện thoại, Phú Khang sẽ liên hệ tư vấn miễn phí theo nhu cầu gia đình hoặc kinh doanh.
+          <p class="cta-consult__text mt-10 text-18 fw-500 text-white">
+            Để lại thông tin, Phú Khang sẽ liên hệ tư vấn miễn phí theo nhu cầu gia đình hoặc kinh doanh.
           </p>
-          <div class="text-18 text-white mt-40 md:mt-20">
-            Nhận ưu đãi sớm nhất trong tuần
-          </div>
-          <div class="mt-10">
-            <div class="singleInput -type-2 row x-gap-10 y-gap-10">
-              <div class="col-md-auto col-12">
-                <input type="tel" placeholder="Số điện thoại" class="">
+          <form class="cta-consult__form mt-15" action="#" method="post">
+            <div class="row x-gap-10 y-gap-10">
+              <div class="col-6">
+                <input type="text" name="name" placeholder="Họ và tên" required>
               </div>
-              <div class="col-md-auto col-12">
-                <button class="button -md -accent-1 bg-white col-12 text-accent-2">Gửi ngay</button>
+              <div class="col-6">
+                <input type="tel" name="phone" placeholder="Số điện thoại" required>
+              </div>
+              <div class="col-12">
+                <input type="text" name="address" placeholder="Địa chỉ">
+              </div>
+              <div class="col-12">
+                <textarea name="message" rows="3" placeholder="Nội dung cần tư vấn"></textarea>
+              </div>
+              <div class="col-12 d-flex justify-center">
+                <button type="submit" class="button -md -accent-1 bg-white text-accent-2">Gửi ngay</button>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-6">
-        <div class="cta__image">
-          <img src="{{ asset('user/img/cta/phukhang-cta.webp') }}" alt="Thùng gỗ sồi Phú Khang">
+          </form>
         </div>
       </div>
     </div>
