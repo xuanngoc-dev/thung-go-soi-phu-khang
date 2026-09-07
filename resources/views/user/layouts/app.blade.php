@@ -11,8 +11,9 @@
 
   <link rel="stylesheet" href="{{ asset('user/css/vendors.css') }}">
   <link rel="stylesheet" href="{{ asset('user/css/main.css') }}">
+  <link rel="stylesheet" href="{{ asset('user/css/custom.css') }}">
 
-  <title>@yield('title', 'ViaTours') - {{ config('app.name', 'Laravel') }}</title>
+  <title>@yield('title', 'Trang chủ') - {{ config('app.name', 'Thùng Gỗ Sồi Phú Khang') }}</title>
   @stack('styles')
 </head>
 <body>
@@ -32,14 +33,14 @@
       </div>
     </div>
 
-    <div class="preloader__title">Viatours</div>
+    <div class="preloader__title">Phú Khang</div>
   </div>
 
   <div class="tourPagesSidebar" data-x="tourPagesSidebar" data-x-toggle="-is-active">
     <div class="tourPagesSidebar__overlay"></div>
     <div class="tourPagesSidebar__content">
       <div class="tourPagesSidebar__header d-flex items-center justify-between">
-        <div class="text-20 fw-500">All filters</div>
+        <div class="text-20 fw-500">Bộ lọc</div>
 
         <button class="button -dark-1 size-40 rounded-full bg-light-1" data-x-click="tourPagesSidebar">
           <i class="icon-cross text-10"></i>
