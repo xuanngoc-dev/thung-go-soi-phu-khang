@@ -12,7 +12,7 @@
       </div>
     </div>
 
-    <div class="overflow-hidden pt-40 sm:pt-20 js-section-slider" data-anim-child="slide-up delay-2" data-slider-cols="xl-8 lg-5 md-4 sm-3 base-2" data-gap="36" data-pagination="js-dest-pagination">
+    <div class="overflow-hidden pt-40 sm:pt-20 js-section-slider" data-anim-child="slide-up delay-2" data-slider-cols="xl-8 lg-5 md-4 sm-3 base-2" data-gap="16" data-pagination="js-dest-pagination">
       <div class="swiper-wrapper">
         @php
           $categories = [

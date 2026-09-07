@@ -9,7 +9,7 @@
     <div data-anim-child="slide-up delay-2" class="relative pt-40 sm:pt-20">
       <div
         class="overflow-hidden pb-30 js-section-slider"
-        data-gap="30"
+        data-gap="16"
         data-slider-cols="xl-3 lg-3 md-2 sm-1 base-1"
         data-loop
         data-autoplay="3500"

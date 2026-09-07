@@ -8,7 +8,7 @@
   $old = $product['old'] ?? null;
   $rating = $product['rating'] ?? '4.8 (120+)';
   $tag = $product['tag'] ?? '';
-  $cardClass = trim('tourCard -type-1 py-10 px-10 border-1 rounded-12 -hover-shadow '.($class ?? ''));
+  $cardClass = trim('tourCard -type-1 border-1 rounded-12 -hover-shadow '.($class ?? ''));
 @endphp
 
 <a href="{{ $url }}" class="{{ $cardClass }}">
@@ -26,7 +26,7 @@
       <i class="icon-heart"></i>
     </button>
   </div>
-  <div class="tourCard__content px-10 pt-10">
+  <div class="tourCard__content">
     @if ($loc !== '')
     <div class="tourCard__location d-flex items-center text-13 text-light-2">
       <i class="icon-pin d-flex text-16 text-light-2 mr-5"></i>
@@ -44,7 +44,7 @@
       </div>
       <span class="text-dark-1 ml-10">{{ $rating }}</span>
     </div>
-    <div class="d-flex justify-end items-center border-1-top text-13 text-dark-1 pt-10 mt-10">
+    <div class="d-flex justify-end items-center border-1-top text-13 text-dark-1">
       <div class="tourCard__priceWrap d-flex items-baseline">
         <span class="tourCard__price text-16 fw-500">{{ number_format($price, 0, ',', '.') }}đ</span>
         @if ($old)

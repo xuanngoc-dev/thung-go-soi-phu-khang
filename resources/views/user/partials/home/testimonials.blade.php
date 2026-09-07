@@ -11,7 +11,7 @@
     </div>
 
     <div class="relative pt-40 sm:pt-20">
-      <div class="overflow-hidden pb-30 js-section-slider" data-gap="30" data-slider-cols="xl-2 lg-2 md-1 sm-1 base-1" data-nav-prev="js-testimonials-prev" data-nav-next="js-testimonials-next">
+      <div class="overflow-hidden pb-30 js-section-slider" data-gap="16" data-slider-cols="xl-2 lg-2 md-1 sm-1 base-1" data-nav-prev="js-testimonials-prev" data-nav-next="js-testimonials-next">
         <div class="swiper-wrapper">
           @php
             $reviews = [

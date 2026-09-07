@@ -13,7 +13,7 @@
     </div>
 
     <div data-anim-child="slide-up delay-2" class="relative pt-40 sm:pt-20">
-      <div class="overflow-hidden pb-30 js-section-slider" data-gap="30" data-slider-cols="xl-4 lg-3 md-2 sm-2 base-2" data-nav-prev="js-slider1-prev" data-nav-next="js-slider1-next">
+      <div class="overflow-hidden pb-30 js-section-slider" data-gap="16" data-slider-cols="xl-4 lg-3 md-2 sm-2 base-2" data-nav-prev="js-slider1-prev" data-nav-next="js-slider1-next">
         <div class="swiper-wrapper">
           @php
             $trending = [

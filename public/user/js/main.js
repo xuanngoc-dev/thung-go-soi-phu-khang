@@ -1021,6 +1021,9 @@ function sectionSlider() {
     if (el.hasAttribute('data-loop'))   loop = true;
     if (el.hasAttribute('data-center')) centered = true;
 
+    const gapDesktop = parseInt(gap, 10) || 0;
+    const gapMobile = Math.min(gapDesktop || 16, 8);
+
     if (el.hasAttribute('data-autoplay')) {
       const delay = parseInt(el.getAttribute('data-autoplay'), 10);
       autoplay = {
@@ -1083,15 +1086,15 @@ function sectionSlider() {
       
       scrollbar: scrollbar,
       pagination: pagination,
-      spaceBetween: 10,
+      spaceBetween: gapMobile,
       
       // width: 330,
       slidesPerView: parseInt(cols_base),
       breakpoints: {
-        1199: { slidesPerView: parseInt(cols_xl), width: null, spaceBetween: parseInt(gap), },
-        991: { slidesPerView: parseInt(cols_lg), width: null, spaceBetween: parseInt(gap), },
-        767:  { slidesPerView: parseInt(cols_md), width: null, spaceBetween: parseInt(gap), },
-        574:  { slidesPerView: parseInt(cols_sm), width: null, spaceBetween: parseInt(gap), },
+        1199: { slidesPerView: parseInt(cols_xl), width: null, spaceBetween: gapDesktop, },
+        991: { slidesPerView: parseInt(cols_lg), width: null, spaceBetween: gapDesktop, },
+        767:  { slidesPerView: parseInt(cols_md), width: null, spaceBetween: gapMobile, },
+        574:  { slidesPerView: parseInt(cols_sm), width: null, spaceBetween: gapMobile, },
       },
 
       lazy: {
